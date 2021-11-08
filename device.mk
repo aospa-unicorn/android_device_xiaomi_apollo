@@ -130,8 +130,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service
+    android.hardware.ir-service.example
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
