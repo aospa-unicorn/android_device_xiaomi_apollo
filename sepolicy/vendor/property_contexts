@@ -23,3 +23,7 @@ ro.vendor.ril                               u:object_r:vendor_public_vendor_defa
 
 # Thermal
 vendor.sys.thermal.                         u:object_r:vendor_thermal_normal_prop:s0
+
+# Mlipay
+persist.vendor.sys.pay.			            u:object_r:vendor_mlipay_prop:s0
+persist.vendor.sys.provision.status	        u:object_r:vendor_mlipay_prop:s0
