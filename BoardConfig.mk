@@ -107,6 +107,9 @@ KERNEL_DEFCONFIG := apollo_defconfig
 
 KERNEL_LLVM_SUPPORT := true
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
