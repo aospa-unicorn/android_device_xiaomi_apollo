@@ -22,7 +22,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 
 import org.lineageos.settings.dirac.DiracUtils;
-import org.lineageos.settings.doze.PocketService;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 
@@ -39,9 +38,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         // Thermal Profiles
         ThermalUtils.startService(context);
-
-        // Pocket
-        PocketService.startService(context);
 
         // Per app refresh rate
         RefreshUtils.startService(context);
