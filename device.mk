@@ -232,10 +232,7 @@ PRODUCT_PACKAGES += \
     ApolloSettings \
     ApolloSystemUI \
     AOSPAApolloFrameworks \
-    AOSPAApolloSystemUI \
-    FrameworksResTarget \
-    WifiResTarget \
-    WifiMainline
+    AOSPAApolloSystemUI
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
