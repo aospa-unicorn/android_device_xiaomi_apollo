@@ -71,8 +71,8 @@ void vendor_load_properties()
     string hwc = GetProperty("ro.boot.hwc", "");
     string sku = GetProperty("ro.boot.product.hardware.sku", "");
 
-    if (hwc == "CN") { // K30S Ultra (China)
-            set_device_props("Xiaomi", "K30S Ultra", "apollo", "M2007J3SC");
+    if (hwc == "CN") { // Redmi K30S Ultra (China)
+            set_device_props("Redmi", "Redmi K30S Ultra", "apollo", "M2007J3SC");
     } else {
         if (sku == "pro") { // Mi 10T Pro
             set_device_props("Xiaomi", "Mi 10T Pro", "apollo", "M2007J3SG");
