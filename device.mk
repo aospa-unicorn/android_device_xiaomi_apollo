@@ -203,6 +203,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+# Mlipay
+PRODUCT_PACKAGES += \
+    IFAAService \
+    vendor.xiaomi.hardware.mlipay@1.0.vendor \
+    vendor.xiaomi.hardware.mlipay@1.1.vendor \
+    vendor.xiaomi.hardware.mtdservice@1.0.vendor
+
 # Keymaster
 PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.allow_encrypt_override=true \
