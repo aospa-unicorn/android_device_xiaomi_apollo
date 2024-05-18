@@ -91,6 +91,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.btstack.enable.twsplus=true
 
 # Camera
+$(call inherit-product, vendor/xiaomi/apollo-miuicamera/products/miuicamera.mk)
 PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=true
 
