@@ -95,6 +95,11 @@ $(call inherit-product, vendor/xiaomi/apollo-miuicamera/products/miuicamera.mk)
 PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=true
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.miui.notch=1 \
+    ro.product.mod_device=apollo_global \
+    ro.config.media_vol_steps=30
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
