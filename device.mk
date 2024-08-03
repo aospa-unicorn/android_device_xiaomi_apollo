@@ -353,7 +353,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
     android.hardware.keymaster@4.1.vendor \
     android.hardware.neuralnetworks@1.3.vendor \
-    libcrypto-v33
+    libcrypto-v33 \
+    libutils.vendor
 
 # WLAN
 PRODUCT_COPY_FILES += \
