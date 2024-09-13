@@ -25,6 +25,13 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib/libwvhidl.so)
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
+            ;;
+    esac
+}
 # Default to sanitizing the vendor folder before extraction.
 CLEAN_VENDOR=true
 
