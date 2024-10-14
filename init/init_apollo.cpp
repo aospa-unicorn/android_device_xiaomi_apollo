@@ -73,14 +73,17 @@ void vendor_load_properties()
 
     if (hwc == "CN") { // Redmi K30S Ultra (China)
             set_device_props("Redmi", "Redmi K30S Ultra", "apollo", "M2007J3SC");
+            property_override("ro.build.fingerprint", "Redmi/apollo/apollo:12/RKQ1.211001.001/V14.0.5.0.SJDCNXM:user/release-keys");
+            property_override("ro.build.description", "apollo-user 12 RKQ1.211001.001 V14.0.5.0.SJDCNXM release-keys");
     } else {
         if (sku == "pro") { // Mi 10T Pro
             set_device_props("Xiaomi", "Mi 10T Pro", "apollo", "M2007J3SG");
+            property_override("ro.build.fingerprint", "Xiaomi/apollopro_global/apollo:12/RKQ1.211001.001/V14.0.4.0.SJDMIXM:user/release-keys");
+            property_override("ro.build.description", "apollopro_global-user 12 RKQ1.211001.001 V14.0.4.0.SJDMIXM release-keys");
         } else { // Mi 10T
             set_device_props("Xiaomi", "Mi 10T", "apollo", "M2007J3SY");
+            property_override("ro.build.fingerprint", "Xiaomi/apollo_global/apollo:12/RKQ1.211001.001/V14.0.4.0.SJDMIXM:user/release-keys");
+            property_override("ro.build.description", "apollo_global-user 12 RKQ1.211001.001 V14.0.4.0.SJDMIXM release-keys");
         }
     }
-
-    property_override("ro.build.fingerprint", "google/redfin/redfin:12/SQ3A.220605.009.A1/8643238:user/release-keys");
-    property_override("ro.build.description", "apollo_global-user 12 RKQ1.211001.001 V13.0.3.0.SJDMIXM release-keys");
 }
