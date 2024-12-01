@@ -111,7 +111,11 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
-KERNEL_DEFCONFIG := vendor/apollo_defconfig
+TARGET_KERNEL_CONFIG := \
+    vendor/kona-perf_defconfig \
+    vendor/debugfs.config \
+    vendor/xiaomi/sm8250-common.config \
+    vendor/xiaomi/apollo.config
 
 KERNEL_LLVM_SUPPORT := true
 
