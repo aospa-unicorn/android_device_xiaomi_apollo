@@ -91,7 +91,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.btstack.enable.twsplus=true
 
 # Camera
-PRODUCT_VENDOR_PROPERTIES += \
+#PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=true
 
 PRODUCT_COPY_FILES += \
@@ -102,9 +102,14 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64 \
+    android.hardware.camera.provider@2.4-service_64
+
+PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
-    libstdc++.vendor \
+    libgui_vendor \
+    liblz4.vendor \
+    libstdc++_vendor \
+    libutilscallstack.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
@@ -237,6 +242,11 @@ PRODUCT_PACKAGES += \
     AOSPAApolloFrameworks \
     AOSPAApolloSystemUI
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -264,7 +274,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     charging \
     display \
-    gps \
     init \
     media \
     nfc \
