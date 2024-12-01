@@ -16,7 +16,7 @@ android_app {
     privileged: true,
 
     static_libs: [
-        "co.aospa.resources",
+        "org.lineageos.settings.resources",
     ],
 
     optimize: {
