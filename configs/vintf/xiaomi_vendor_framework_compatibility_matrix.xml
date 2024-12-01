@@ -13,6 +13,14 @@
      limitations under the License.
 -->
 <compatibility-matrix version="1.0" type="framework">
+    <hal format="hidl">
+        <name>vendor.qti.qspmhal</name>
+        <version>1.0</version>
+        <interface>
+            <name>IQspmhal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- AudioHAL ext -->
     <hal format="hidl">
         <name>vendor.qti.hardware.audiohalext</name>
