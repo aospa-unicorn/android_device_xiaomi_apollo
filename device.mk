@@ -274,7 +274,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     charging \
     display \
-    gps \
     init \
     media \
     nfc \
